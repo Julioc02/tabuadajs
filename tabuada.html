@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabuada</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Soma</legend>
+    <label>Valor 1:</label>
+    <input id="v1" type="text"/>
+    <label>Valor 2: </label>
+    <input id="v2" type="text"/>
+       
+    <button id="somar" onclick="somar()">Somar</button>
+        <button id="subtrair" onclick="subtrair()">Subtrair</button>
+            <button id="multiplicar" onclick="multiplicar()">Multiplicar</button>
+                <button id="dividir" onclick="dividir()">Dividir</button>
+</fieldset>
+<script type="text/javascript">
+    function somar(){
+        var s1 = document.getElementById("v1").value;
+        var s2 = document.getElementById("v2").value;
+        var resultado = parseInt(s1) + parseInt(s2);
+        alert(resultado); 
+    }
+        function subtrair(){
+        var s1 = document.getElementById("v1").value;
+        var s2 = document.getElementById("v2").value;
+        var resultado = s1 - s2;
+        alert(resultado); 
+    }
+    function multiplicar(){
+        var s1 = document.getElementById("v1").value;
+        var s2 = document.getElementById("v2").value;
+        var resultado = s1 * s2;
+        alert(resultado); 
+    }
+     function dividir(){
+        var s1 = document.getElementById("v1").value;
+        var s2 = document.getElementById("v2").value;
+        var resultado =  s1/s2;
+        alert(resultado); 
+    }
+</script>
+</body>
+</html>
